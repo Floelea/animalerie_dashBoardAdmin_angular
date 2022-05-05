@@ -1,0 +1,25 @@
+h5 {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.container {
+  max-width: 400px;
+  margin-left: 89px;
+  margin-right: 180px;
+}
+
+label {
+  font-size: 15px;
+}
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.result {
+  color: white;
+  background-color: rgba(144, 92, 76, 0.696);
+}

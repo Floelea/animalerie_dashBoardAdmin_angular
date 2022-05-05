@@ -1,0 +1,24 @@
+<h5>Panier abandonné</h5>
+
+
+
+<div class="d-flex align-items-start">
+
+
+  <form name="form" #f="ngForm" (ngSubmit)="searchCart()" class="d-flex flex-column container">
+
+    <label for="startDateCart">Date de début</label>
+    <input type="date" name="startDateCart" id="startDateCart" placeholder="Début" [(ngModel)]="startDateCart">
+    <label for="endDateCart">Date de fin</label>
+    <input type="date" name="endDateCart" id="endDateCart" placeholder="Fin" [(ngModel)]="endDateCart">
+    <input type="submit" value="Rechercher" class="btn btn-success">
+  </form>
+  <div *ngIf="f.submitted" class="result p-5">
+    <p class="text-center">Panier abandonné entre le</p>
+    <div class="d-flex">
+      <p class="fw-bold fs-5">{{startDateCart}} et le {{endDateCart}}</p>
+    </div>
+    <p class="fw-bold fs-4 m-0 text-center">{{cart}}</p>
+  </div>
+
+</div>
